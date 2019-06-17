@@ -1,12 +1,12 @@
-import React from "react";
-import { Button, ListGroup, ListGroupItem, Row, Col } from "reactstrap";
-import { Moderator } from "./Moderator";
+import React from 'react'
+import { Button, ListGroup, ListGroupItem, Row, Col } from 'reactstrap'
+import { Moderator } from './Moderator'
 
 export const Moderation = () => {
   return (
     <>
       <h1>
-        <span role="img" aria-label="модерация">
+        <span role='img' aria-label='модерация'>
           👮🏻
         </span>
         Модерация
@@ -14,27 +14,34 @@ export const Moderation = () => {
       <ListGroup>
         <ListGroupItem>
           <Row>
-            <Col xs={6} md={4}>
-              <Moderator name="Ychebotaev" avatarSrc="/img/ychebotaev.jpg" />
+            <Col xs={6} md={3}>
+              <Moderator name='Ychebotaev' avatarSrc='/img/ychebotaev.jpg' />
             </Col>
-            <Col xs={6} md={4}>
-              <Moderator name="KorolDmitry" avatarSrc="/img/dmitry-korol.jpg" />
+            <Col xs={6} md={3}>
+              <Moderator name='KorolDmitry' avatarSrc='/img/dmitry-korol.jpg' />
             </Col>
-            <Col xs={6} md={4}>
-              <Moderator name="inkognito1" avatarSrc="/img/pavel.jpg" />
+            <Col xs={6} md={3}>
+              <Moderator name='inkognito1' avatarSrc='/img/pavel.jpg' />
+            </Col>
+            <Col xs={6} md={3}>
+              <Moderator
+                noUrl
+                name='Aleksandr Krivenkov'
+                avatarSrc='/img/alexander.jpg'
+              />
             </Col>
           </Row>
         </ListGroupItem>
         <ListGroupItem>
           <h3>
-            <span role="img" aria-label="компьютер">
+            <span role='img' aria-label='компьютер'>
               👨‍💻
-            </span>{" "}
+            </span>{' '}
             Сообщество нуждается в волонтерах-модераторах
           </h3>
           <p>
-            Пожалуйста, свяжитесь с{" "}
-            <a href="tg://resolve?domain=ychebotaev">@ychebotaev</a> в telegram,
+            Пожалуйста, свяжитесь с{' '}
+            <a href='tg://resolve?domain=ychebotaev'>@ychebotaev</a> в telegram,
             если вы:
           </p>
           <ul>
@@ -49,15 +56,15 @@ export const Moderation = () => {
             <li>Понимаете и готовы соблюдать правила на этой странице.</li>
           </ul>
           <div
-            className="text-center"
-            style={{ marginTop: "1rem", marginBottom: "1rem" }}
+            className='text-center'
+            style={{ marginTop: '1rem', marginBottom: '1rem' }}
           >
-            <Button tag="a" href="tg://resolve?domain=ychebotaev">
+            <Button tag='a' href='tg://resolve?domain=ychebotaev'>
               Попроситься в модераторы
             </Button>
           </div>
         </ListGroupItem>
       </ListGroup>
     </>
-  );
-};
+  )
+}
